@@ -14,4 +14,8 @@ public class DashboardFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_dashboard, container, false);
     }
+
+    public interface OnFragmentInteractionListener {
+        public void onFragmentInteraction(String title);
+    }
 }
